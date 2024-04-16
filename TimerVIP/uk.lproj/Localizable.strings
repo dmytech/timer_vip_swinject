@@ -1,0 +1,31 @@
+/* 
+  Localizable.strings
+  CustomizeTimer
+
+  Created by D_K on 17.12.2023.
+  
+*/
+
+// MARK: - General
+"time_hour_long" = "hour";
+"time_hours_long" = "hours";
+"time_hours_short" = "hrs";
+"time_min_short" = "min";
+"time_sec_short" = "sec";
+
+"clear_all_btn" = "Clear All";
+
+// MARK: - Tabs
+"timer_tab_bar" = "Timer";
+"custom_tab_bar" = "Custom";
+"stopwatch_tab_bar" = "Stopwatch";
+"settings_tab_bar" = "Settings";
+
+// MARK: - Default Timer
+"default_timer_title" = "Timers";
+"default_timer_recent" = "Recent";
+"default_timer_active" = "Active";
+
+
+
+

@@ -7,15 +7,96 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C86F0DCD2BCD838900F145DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F0DCC2BCD838900F145DD /* AppDelegate.swift */; };
-		C86F0DCF2BCD838900F145DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F0DCE2BCD838900F145DD /* SceneDelegate.swift */; };
-		C86F0DD12BCD838900F145DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F0DD02BCD838900F145DD /* ViewController.swift */; };
-		C86F0DD42BCD838900F145DD /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C86F0DD32BCD838900F145DD /* Base */; };
-		C86F0DD62BCD838A00F145DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C86F0DD52BCD838A00F145DD /* Assets.xcassets */; };
-		C86F0DD92BCD838A00F145DD /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C86F0DD82BCD838A00F145DD /* Base */; };
+		C85DC2B82BCD926100E10FED /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = C85DC2B72BCD926100E10FED /* Swinject */; };
+		C85DC2BA2BCD928E00E10FED /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85DC2B92BCD928E00E10FED /* Localization.swift */; };
 		C86F0DE42BCD838A00F145DD /* TimerVIPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F0DE32BCD838A00F145DD /* TimerVIPTests.swift */; };
 		C86F0DEE2BCD838A00F145DD /* TimerVIPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F0DED2BCD838A00F145DD /* TimerVIPUITests.swift */; };
 		C86F0DF02BCD838A00F145DD /* TimerVIPUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F0DEF2BCD838A00F145DD /* TimerVIPUITestsLaunchTests.swift */; };
+		C86F0E052BCD8F0100F145DD /* AppConfigServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F0DFF2BCD8F0100F145DD /* AppConfigServices.swift */; };
+		C86F0E062BCD8F0100F145DD /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F0E002BCD8F0100F145DD /* AppContainer.swift */; };
+		C86F0E072BCD8F0100F145DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F0E012BCD8F0100F145DD /* AppDelegate.swift */; };
+		C86F0E082BCD8F0100F145DD /* Assemblies.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F0E022BCD8F0100F145DD /* Assemblies.swift */; };
+		C86F0E092BCD8F0100F145DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F0E032BCD8F0100F145DD /* SceneDelegate.swift */; };
+		C86F0E122BCD8F0900F145DD /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F0E0B2BCD8F0900F145DD /* BaseView.swift */; };
+		C86F0E132BCD8F0900F145DD /* ClosureType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F0E0C2BCD8F0900F145DD /* ClosureType.swift */; };
+		C86F0E142BCD8F0900F145DD /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F0E0D2BCD8F0900F145DD /* Coordinator.swift */; };
+		C86F0E152BCD8F0900F145DD /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F0E0E2BCD8F0900F145DD /* NavigationController.swift */; };
+		C86F0E172BCD8F0900F145DD /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F0E102BCD8F0900F145DD /* TabBarController.swift */; };
+		C86F0E462BCD8F2000F145DD /* ActiveDefaultTimerTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F0E182BCD8F2000F145DD /* ActiveDefaultTimerTableCell.swift */; };
+		C86F0E472BCD8F2000F145DD /* ActiveDefaultTimerTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C86F0E192BCD8F2000F145DD /* ActiveDefaultTimerTableCell.xib */; };
+		C86F0E482BCD8F2000F145DD /* ActiveDefaultTimerTableCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F0E1A2BCD8F2000F145DD /* ActiveDefaultTimerTableCellModel.swift */; };
+		C86F0E492BCD8F2000F145DD /* RecentDefaultTimerTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F0E1C2BCD8F2000F145DD /* RecentDefaultTimerTableCell.swift */; };
+		C86F0E4A2BCD8F2000F145DD /* RecentDefaultTimerTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C86F0E1D2BCD8F2000F145DD /* RecentDefaultTimerTableCell.xib */; };
+		C86F0E4B2BCD8F2000F145DD /* RecentDefaultTimerTableCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F0E1E2BCD8F2000F145DD /* RecentDefaultTimerTableCellModel.swift */; };
+		C86F0E4C2BCD8F2000F145DD /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F0E212BCD8F2000F145DD /* IntExtension.swift */; };
+		C86F0E4D2BCD8F2000F145DD /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F0E222BCD8F2000F145DD /* NSObjectExtension.swift */; };
+		C86F0E4E2BCD8F2000F145DD /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F0E232BCD8F2000F145DD /* UILabelExtension.swift */; };
+		C86F0E4F2BCD8F2000F145DD /* UIPageViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F0E242BCD8F2000F145DD /* UIPageViewControllerExtension.swift */; };
+		C86F0E502BCD8F2000F145DD /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F0E252BCD8F2000F145DD /* UITableViewExtension.swift */; };
+		C86F0E512BCD8F2000F145DD /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F0E262BCD8F2000F145DD /* UIViewExtension.swift */; };
+		C86F0E522BCD8F2000F145DD /* AppLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F0E282BCD8F2000F145DD /* AppLabel.swift */; };
+		C86F0E532BCD8F2000F145DD /* AnimateFlightIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F0E2A2BCD8F2000F145DD /* AnimateFlightIconView.swift */; };
+		C86F0E542BCD8F2000F145DD /* AnimateFlightIconView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C86F0E2B2BCD8F2000F145DD /* AnimateFlightIconView.xib */; };
+		C86F0E552BCD8F2000F145DD /* InputFieldWithIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F0E2D2BCD8F2000F145DD /* InputFieldWithIconView.swift */; };
+		C86F0E562BCD8F2000F145DD /* InputFieldWithIconView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C86F0E2E2BCD8F2000F145DD /* InputFieldWithIconView.xib */; };
+		C86F0E572BCD8F2000F145DD /* TapFieldWithIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F0E302BCD8F2000F145DD /* TapFieldWithIconView.swift */; };
+		C86F0E582BCD8F2000F145DD /* TapFieldWithIconView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C86F0E312BCD8F2000F145DD /* TapFieldWithIconView.xib */; };
+		C86F0E592BCD8F2000F145DD /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F0E342BCD8F2000F145DD /* PageView.swift */; };
+		C86F0E5A2BCD8F2000F145DD /* PageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C86F0E352BCD8F2000F145DD /* PageView.xib */; };
+		C86F0E5B2BCD8F2000F145DD /* TimePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F0E372BCD8F2000F145DD /* TimePickerView.swift */; };
+		C86F0E5C2BCD8F2000F145DD /* TimePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C86F0E382BCD8F2000F145DD /* TimePickerView.xib */; };
+		C86F0E5D2BCD8F2000F145DD /* ValueDescriptionPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F0E3A2BCD8F2000F145DD /* ValueDescriptionPickerView.swift */; };
+		C86F0E5E2BCD8F2000F145DD /* ValueDescriptionPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C86F0E3B2BCD8F2000F145DD /* ValueDescriptionPickerView.xib */; };
+		C86F0E5F2BCD8F2000F145DD /* TimerCountActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F0E3E2BCD8F2000F145DD /* TimerCountActionView.swift */; };
+		C86F0E602BCD8F2000F145DD /* TimerCountActionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C86F0E3F2BCD8F2000F145DD /* TimerCountActionView.xib */; };
+		C86F0E612BCD8F2000F145DD /* RecentDefaultTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F0E422BCD8F2000F145DD /* RecentDefaultTimer.swift */; };
+		C86F0E622BCD8F2000F145DD /* TimeBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F0E432BCD8F2000F145DD /* TimeBase.swift */; };
+		C86F0E632BCD8F2000F145DD /* TimeConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F0E442BCD8F2000F145DD /* TimeConstant.swift */; };
+		C86F0E6F2BCD8F2E00F145DD /* AppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F0E642BCD8F2E00F145DD /* AppFont.swift */; };
+		C86F0E702BCD8F2E00F145DD /* Barlow-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C86F0E652BCD8F2E00F145DD /* Barlow-Black.ttf */; };
+		C86F0E712BCD8F2E00F145DD /* Barlow-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C86F0E662BCD8F2E00F145DD /* Barlow-Bold.ttf */; };
+		C86F0E722BCD8F2E00F145DD /* Barlow-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C86F0E672BCD8F2E00F145DD /* Barlow-ExtraBold.ttf */; };
+		C86F0E732BCD8F2E00F145DD /* Barlow-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C86F0E682BCD8F2E00F145DD /* Barlow-Light.ttf */; };
+		C86F0E742BCD8F2E00F145DD /* Barlow-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C86F0E692BCD8F2E00F145DD /* Barlow-Medium.ttf */; };
+		C86F0E752BCD8F2E00F145DD /* Barlow-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C86F0E6A2BCD8F2E00F145DD /* Barlow-Regular.ttf */; };
+		C86F0E762BCD8F2E00F145DD /* Barlow-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C86F0E6B2BCD8F2E00F145DD /* Barlow-SemiBold.ttf */; };
+		C86F0E772BCD8F2E00F145DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C86F0E6D2BCD8F2E00F145DD /* Assets.xcassets */; };
+		C86F0EAC2BCD8F3D00F145DD /* DefaultActiveTimersAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F0E7E2BCD8F3D00F145DD /* DefaultActiveTimersAssembly.swift */; };
+		C86F0EAD2BCD8F3D00F145DD /* DefaultActiveTimersCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F0E7F2BCD8F3D00F145DD /* DefaultActiveTimersCoordinator.swift */; };
+		C86F0EAE2BCD8F3D00F145DD /* DefaultActiveTimersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F0E802BCD8F3D00F145DD /* DefaultActiveTimersInteractor.swift */; };
+		C86F0EAF2BCD8F3D00F145DD /* DefaultActiveTimersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F0E812BCD8F3D00F145DD /* DefaultActiveTimersPresenter.swift */; };
+		C86F0EB02BCD8F3D00F145DD /* DefaultActiveTimersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F0E822BCD8F3D00F145DD /* DefaultActiveTimersView.swift */; };
+		C86F0EB12BCD8F3D00F145DD /* DefaultActiveTimersView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C86F0E832BCD8F3D00F145DD /* DefaultActiveTimersView.xib */; };
+		C86F0EB22BCD8F3D00F145DD /* DefaultCreateTimerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F0E852BCD8F3D00F145DD /* DefaultCreateTimerAssembly.swift */; };
+		C86F0EB32BCD8F3D00F145DD /* DefaultCreateTimerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F0E862BCD8F3D00F145DD /* DefaultCreateTimerCoordinator.swift */; };
+		C86F0EB42BCD8F3D00F145DD /* DefaultCreateTimerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F0E872BCD8F3D00F145DD /* DefaultCreateTimerInteractor.swift */; };
+		C86F0EB52BCD8F3D00F145DD /* DefaultCreateTimerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F0E882BCD8F3D00F145DD /* DefaultCreateTimerPresenter.swift */; };
+		C86F0EB62BCD8F3D00F145DD /* DefaultCreateTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F0E892BCD8F3D00F145DD /* DefaultCreateTimerView.swift */; };
+		C86F0EB72BCD8F3D00F145DD /* DefaultCreateTimerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C86F0E8A2BCD8F3D00F145DD /* DefaultCreateTimerView.xib */; };
+		C86F0EB82BCD8F3D00F145DD /* DefaultTimerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F0E8C2BCD8F3D00F145DD /* DefaultTimerAssembly.swift */; };
+		C86F0EB92BCD8F3D00F145DD /* DefaultTimerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F0E8D2BCD8F3D00F145DD /* DefaultTimerCoordinator.swift */; };
+		C86F0EBA2BCD8F3D00F145DD /* DefaultTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F0E8E2BCD8F3D00F145DD /* DefaultTimerView.swift */; };
+		C86F0EBB2BCD8F3D00F145DD /* DefaultTimerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C86F0E8F2BCD8F3D00F145DD /* DefaultTimerView.xib */; };
+		C86F0EBC2BCD8F3D00F145DD /* DefaultTimerViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F0E902BCD8F3D00F145DD /* DefaultTimerViewProtocols.swift */; };
+		C86F0EBD2BCD8F3D00F145DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C86F0E942BCD8F3D00F145DD /* LaunchScreen.storyboard */; };
+		C86F0EBF2BCD8F3D00F145DD /* SettingsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F0E982BCD8F3D00F145DD /* SettingsAssembly.swift */; };
+		C86F0EC02BCD8F3D00F145DD /* SettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F0E992BCD8F3D00F145DD /* SettingsCoordinator.swift */; };
+		C86F0EC12BCD8F3D00F145DD /* SettingsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F0E9A2BCD8F3D00F145DD /* SettingsInteractor.swift */; };
+		C86F0EC22BCD8F3D00F145DD /* SettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F0E9B2BCD8F3D00F145DD /* SettingsPresenter.swift */; };
+		C86F0EC32BCD8F3D00F145DD /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F0E9C2BCD8F3D00F145DD /* SettingsView.swift */; };
+		C86F0EC42BCD8F3D00F145DD /* SettingsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C86F0E9D2BCD8F3D00F145DD /* SettingsView.xib */; };
+		C86F0EC52BCD8F3D00F145DD /* StopwatchAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F0E9F2BCD8F3D00F145DD /* StopwatchAssembly.swift */; };
+		C86F0EC62BCD8F3D00F145DD /* StopwatchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F0EA02BCD8F3D00F145DD /* StopwatchCoordinator.swift */; };
+		C86F0EC72BCD8F3D00F145DD /* StopwatchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F0EA12BCD8F3D00F145DD /* StopwatchInteractor.swift */; };
+		C86F0EC82BCD8F3D00F145DD /* StopwatchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F0EA22BCD8F3D00F145DD /* StopwatchPresenter.swift */; };
+		C86F0EC92BCD8F3D00F145DD /* StopwatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F0EA32BCD8F3D00F145DD /* StopwatchView.swift */; };
+		C86F0ECA2BCD8F3D00F145DD /* StopwatchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C86F0EA42BCD8F3D00F145DD /* StopwatchView.xib */; };
+		C86F0ED42BCD8F4400F145DD /* TabBarWindowRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F0ECB2BCD8F4400F145DD /* TabBarWindowRoot.swift */; };
+		C86F0ED52BCD8F4400F145DD /* WindowRootEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F0ECC2BCD8F4400F145DD /* WindowRootEntity.swift */; };
+		C86F0ED72BCD8F4400F145DD /* RealmRootService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F0ED02BCD8F4400F145DD /* RealmRootService.swift */; };
+		C86F0ED82BCD8F4400F145DD /* ServiceAssambly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F0ED12BCD8F4400F145DD /* ServiceAssambly.swift */; };
+		C86F0ED92BCD8F4400F145DD /* WindowRootService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F0ED22BCD8F4400F145DD /* WindowRootService.swift */; };
+		C86F0EE62BCD905A00F145DD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C86F0EE52BCD905A00F145DD /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,19 +117,101 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C85DC2B52BCD924C00E10FED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C85DC2B92BCD928E00E10FED /* Localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 		C86F0DC92BCD838900F145DD /* TimerVIP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimerVIP.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C86F0DCC2BCD838900F145DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C86F0DCE2BCD838900F145DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C86F0DD02BCD838900F145DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C86F0DD32BCD838900F145DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C86F0DD52BCD838A00F145DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C86F0DD82BCD838A00F145DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		C86F0DDA2BCD838A00F145DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C86F0DDF2BCD838A00F145DD /* TimerVIPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimerVIPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C86F0DE32BCD838A00F145DD /* TimerVIPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerVIPTests.swift; sourceTree = "<group>"; };
 		C86F0DE92BCD838A00F145DD /* TimerVIPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimerVIPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C86F0DED2BCD838A00F145DD /* TimerVIPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerVIPUITests.swift; sourceTree = "<group>"; };
 		C86F0DEF2BCD838A00F145DD /* TimerVIPUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerVIPUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C86F0DFF2BCD8F0100F145DD /* AppConfigServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfigServices.swift; sourceTree = "<group>"; };
+		C86F0E002BCD8F0100F145DD /* AppContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
+		C86F0E012BCD8F0100F145DD /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C86F0E022BCD8F0100F145DD /* Assemblies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assemblies.swift; sourceTree = "<group>"; };
+		C86F0E032BCD8F0100F145DD /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C86F0E0B2BCD8F0900F145DD /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		C86F0E0C2BCD8F0900F145DD /* ClosureType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosureType.swift; sourceTree = "<group>"; };
+		C86F0E0D2BCD8F0900F145DD /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		C86F0E0E2BCD8F0900F145DD /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		C86F0E102BCD8F0900F145DD /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		C86F0E182BCD8F2000F145DD /* ActiveDefaultTimerTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActiveDefaultTimerTableCell.swift; sourceTree = "<group>"; };
+		C86F0E192BCD8F2000F145DD /* ActiveDefaultTimerTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActiveDefaultTimerTableCell.xib; sourceTree = "<group>"; };
+		C86F0E1A2BCD8F2000F145DD /* ActiveDefaultTimerTableCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActiveDefaultTimerTableCellModel.swift; sourceTree = "<group>"; };
+		C86F0E1C2BCD8F2000F145DD /* RecentDefaultTimerTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentDefaultTimerTableCell.swift; sourceTree = "<group>"; };
+		C86F0E1D2BCD8F2000F145DD /* RecentDefaultTimerTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecentDefaultTimerTableCell.xib; sourceTree = "<group>"; };
+		C86F0E1E2BCD8F2000F145DD /* RecentDefaultTimerTableCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentDefaultTimerTableCellModel.swift; sourceTree = "<group>"; };
+		C86F0E212BCD8F2000F145DD /* IntExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntExtension.swift; sourceTree = "<group>"; };
+		C86F0E222BCD8F2000F145DD /* NSObjectExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObjectExtension.swift; sourceTree = "<group>"; };
+		C86F0E232BCD8F2000F145DD /* UILabelExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
+		C86F0E242BCD8F2000F145DD /* UIPageViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIPageViewControllerExtension.swift; sourceTree = "<group>"; };
+		C86F0E252BCD8F2000F145DD /* UITableViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
+		C86F0E262BCD8F2000F145DD /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		C86F0E282BCD8F2000F145DD /* AppLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppLabel.swift; sourceTree = "<group>"; };
+		C86F0E2A2BCD8F2000F145DD /* AnimateFlightIconView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimateFlightIconView.swift; sourceTree = "<group>"; };
+		C86F0E2B2BCD8F2000F145DD /* AnimateFlightIconView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnimateFlightIconView.xib; sourceTree = "<group>"; };
+		C86F0E2D2BCD8F2000F145DD /* InputFieldWithIconView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputFieldWithIconView.swift; sourceTree = "<group>"; };
+		C86F0E2E2BCD8F2000F145DD /* InputFieldWithIconView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InputFieldWithIconView.xib; sourceTree = "<group>"; };
+		C86F0E302BCD8F2000F145DD /* TapFieldWithIconView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapFieldWithIconView.swift; sourceTree = "<group>"; };
+		C86F0E312BCD8F2000F145DD /* TapFieldWithIconView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TapFieldWithIconView.xib; sourceTree = "<group>"; };
+		C86F0E342BCD8F2000F145DD /* PageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
+		C86F0E352BCD8F2000F145DD /* PageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PageView.xib; sourceTree = "<group>"; };
+		C86F0E372BCD8F2000F145DD /* TimePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimePickerView.swift; sourceTree = "<group>"; };
+		C86F0E382BCD8F2000F145DD /* TimePickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimePickerView.xib; sourceTree = "<group>"; };
+		C86F0E3A2BCD8F2000F145DD /* ValueDescriptionPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValueDescriptionPickerView.swift; sourceTree = "<group>"; };
+		C86F0E3B2BCD8F2000F145DD /* ValueDescriptionPickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ValueDescriptionPickerView.xib; sourceTree = "<group>"; };
+		C86F0E3E2BCD8F2000F145DD /* TimerCountActionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerCountActionView.swift; sourceTree = "<group>"; };
+		C86F0E3F2BCD8F2000F145DD /* TimerCountActionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimerCountActionView.xib; sourceTree = "<group>"; };
+		C86F0E422BCD8F2000F145DD /* RecentDefaultTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentDefaultTimer.swift; sourceTree = "<group>"; };
+		C86F0E432BCD8F2000F145DD /* TimeBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeBase.swift; sourceTree = "<group>"; };
+		C86F0E442BCD8F2000F145DD /* TimeConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeConstant.swift; sourceTree = "<group>"; };
+		C86F0E642BCD8F2E00F145DD /* AppFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppFont.swift; sourceTree = "<group>"; };
+		C86F0E652BCD8F2E00F145DD /* Barlow-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-Black.ttf"; sourceTree = "<group>"; };
+		C86F0E662BCD8F2E00F145DD /* Barlow-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-Bold.ttf"; sourceTree = "<group>"; };
+		C86F0E672BCD8F2E00F145DD /* Barlow-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-ExtraBold.ttf"; sourceTree = "<group>"; };
+		C86F0E682BCD8F2E00F145DD /* Barlow-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-Light.ttf"; sourceTree = "<group>"; };
+		C86F0E692BCD8F2E00F145DD /* Barlow-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-Medium.ttf"; sourceTree = "<group>"; };
+		C86F0E6A2BCD8F2E00F145DD /* Barlow-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-Regular.ttf"; sourceTree = "<group>"; };
+		C86F0E6B2BCD8F2E00F145DD /* Barlow-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-SemiBold.ttf"; sourceTree = "<group>"; };
+		C86F0E6D2BCD8F2E00F145DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C86F0E7E2BCD8F3D00F145DD /* DefaultActiveTimersAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultActiveTimersAssembly.swift; sourceTree = "<group>"; };
+		C86F0E7F2BCD8F3D00F145DD /* DefaultActiveTimersCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultActiveTimersCoordinator.swift; sourceTree = "<group>"; };
+		C86F0E802BCD8F3D00F145DD /* DefaultActiveTimersInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultActiveTimersInteractor.swift; sourceTree = "<group>"; };
+		C86F0E812BCD8F3D00F145DD /* DefaultActiveTimersPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultActiveTimersPresenter.swift; sourceTree = "<group>"; };
+		C86F0E822BCD8F3D00F145DD /* DefaultActiveTimersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultActiveTimersView.swift; sourceTree = "<group>"; };
+		C86F0E832BCD8F3D00F145DD /* DefaultActiveTimersView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DefaultActiveTimersView.xib; sourceTree = "<group>"; };
+		C86F0E852BCD8F3D00F145DD /* DefaultCreateTimerAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultCreateTimerAssembly.swift; sourceTree = "<group>"; };
+		C86F0E862BCD8F3D00F145DD /* DefaultCreateTimerCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultCreateTimerCoordinator.swift; sourceTree = "<group>"; };
+		C86F0E872BCD8F3D00F145DD /* DefaultCreateTimerInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultCreateTimerInteractor.swift; sourceTree = "<group>"; };
+		C86F0E882BCD8F3D00F145DD /* DefaultCreateTimerPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultCreateTimerPresenter.swift; sourceTree = "<group>"; };
+		C86F0E892BCD8F3D00F145DD /* DefaultCreateTimerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultCreateTimerView.swift; sourceTree = "<group>"; };
+		C86F0E8A2BCD8F3D00F145DD /* DefaultCreateTimerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DefaultCreateTimerView.xib; sourceTree = "<group>"; };
+		C86F0E8C2BCD8F3D00F145DD /* DefaultTimerAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultTimerAssembly.swift; sourceTree = "<group>"; };
+		C86F0E8D2BCD8F3D00F145DD /* DefaultTimerCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultTimerCoordinator.swift; sourceTree = "<group>"; };
+		C86F0E8E2BCD8F3D00F145DD /* DefaultTimerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultTimerView.swift; sourceTree = "<group>"; };
+		C86F0E8F2BCD8F3D00F145DD /* DefaultTimerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DefaultTimerView.xib; sourceTree = "<group>"; };
+		C86F0E902BCD8F3D00F145DD /* DefaultTimerViewProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultTimerViewProtocols.swift; sourceTree = "<group>"; };
+		C86F0E982BCD8F3D00F145DD /* SettingsAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsAssembly.swift; sourceTree = "<group>"; };
+		C86F0E992BCD8F3D00F145DD /* SettingsCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
+		C86F0E9A2BCD8F3D00F145DD /* SettingsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsInteractor.swift; sourceTree = "<group>"; };
+		C86F0E9B2BCD8F3D00F145DD /* SettingsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsPresenter.swift; sourceTree = "<group>"; };
+		C86F0E9C2BCD8F3D00F145DD /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		C86F0E9D2BCD8F3D00F145DD /* SettingsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsView.xib; sourceTree = "<group>"; };
+		C86F0E9F2BCD8F3D00F145DD /* StopwatchAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopwatchAssembly.swift; sourceTree = "<group>"; };
+		C86F0EA02BCD8F3D00F145DD /* StopwatchCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopwatchCoordinator.swift; sourceTree = "<group>"; };
+		C86F0EA12BCD8F3D00F145DD /* StopwatchInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopwatchInteractor.swift; sourceTree = "<group>"; };
+		C86F0EA22BCD8F3D00F145DD /* StopwatchPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopwatchPresenter.swift; sourceTree = "<group>"; };
+		C86F0EA32BCD8F3D00F145DD /* StopwatchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopwatchView.swift; sourceTree = "<group>"; };
+		C86F0EA42BCD8F3D00F145DD /* StopwatchView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StopwatchView.xib; sourceTree = "<group>"; };
+		C86F0ECB2BCD8F4400F145DD /* TabBarWindowRoot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarWindowRoot.swift; sourceTree = "<group>"; };
+		C86F0ECC2BCD8F4400F145DD /* WindowRootEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowRootEntity.swift; sourceTree = "<group>"; };
+		C86F0ED02BCD8F4400F145DD /* RealmRootService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmRootService.swift; sourceTree = "<group>"; };
+		C86F0ED12BCD8F4400F145DD /* ServiceAssambly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceAssambly.swift; sourceTree = "<group>"; };
+		C86F0ED22BCD8F4400F145DD /* WindowRootService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowRootService.swift; sourceTree = "<group>"; };
+		C86F0EE02BCD8FEF00F145DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C86F0EE42BCD905A00F145DD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C86F0EE72BCD906900F145DD /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		C86F0EE82BCD906900F145DD /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +219,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C85DC2B82BCD926100E10FED /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +240,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C85DC2B62BCD926100E10FED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C86F0DC02BCD838800F145DD = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +254,7 @@
 				C86F0DE22BCD838A00F145DD /* TimerVIPTests */,
 				C86F0DEC2BCD838A00F145DD /* TimerVIPUITests */,
 				C86F0DCA2BCD838900F145DD /* Products */,
+				C85DC2B62BCD926100E10FED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +271,15 @@
 		C86F0DCB2BCD838900F145DD /* TimerVIP */ = {
 			isa = PBXGroup;
 			children = (
-				C86F0DCC2BCD838900F145DD /* AppDelegate.swift */,
-				C86F0DCE2BCD838900F145DD /* SceneDelegate.swift */,
-				C86F0DD02BCD838900F145DD /* ViewController.swift */,
-				C86F0DD22BCD838900F145DD /* Main.storyboard */,
-				C86F0DD52BCD838A00F145DD /* Assets.xcassets */,
-				C86F0DD72BCD838A00F145DD /* LaunchScreen.storyboard */,
-				C86F0DDA2BCD838A00F145DD /* Info.plist */,
+				C86F0E042BCD8F0100F145DD /* App */,
+				C86F0EA62BCD8F3D00F145DD /* ScreenAssembly */,
+				C86F0E112BCD8F0900F145DD /* BaseModule */,
+				C86F0E452BCD8F2000F145DD /* Helper */,
+				C86F0E6E2BCD8F2E00F145DD /* Resources */,
+				C86F0ED32BCD8F4400F145DD /* Services */,
+				C85DC2B52BCD924C00E10FED /* Info.plist */,
+				C85DC2B92BCD928E00E10FED /* Localization.swift */,
+				C86F0EE52BCD905A00F145DD /* Localizable.strings */,
 			);
 			path = TimerVIP;
 			sourceTree = "<group>";
@@ -127,6 +301,332 @@
 			path = TimerVIPUITests;
 			sourceTree = "<group>";
 		};
+		C86F0E042BCD8F0100F145DD /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C86F0DFF2BCD8F0100F145DD /* AppConfigServices.swift */,
+				C86F0E002BCD8F0100F145DD /* AppContainer.swift */,
+				C86F0E012BCD8F0100F145DD /* AppDelegate.swift */,
+				C86F0E022BCD8F0100F145DD /* Assemblies.swift */,
+				C86F0E032BCD8F0100F145DD /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C86F0E112BCD8F0900F145DD /* BaseModule */ = {
+			isa = PBXGroup;
+			children = (
+				C86F0E0B2BCD8F0900F145DD /* BaseView.swift */,
+				C86F0E0C2BCD8F0900F145DD /* ClosureType.swift */,
+				C86F0E0D2BCD8F0900F145DD /* Coordinator.swift */,
+				C86F0E0E2BCD8F0900F145DD /* NavigationController.swift */,
+				C86F0E102BCD8F0900F145DD /* TabBarController.swift */,
+			);
+			path = BaseModule;
+			sourceTree = "<group>";
+		};
+		C86F0E1B2BCD8F2000F145DD /* ActiveDefaultTimer */ = {
+			isa = PBXGroup;
+			children = (
+				C86F0E182BCD8F2000F145DD /* ActiveDefaultTimerTableCell.swift */,
+				C86F0E192BCD8F2000F145DD /* ActiveDefaultTimerTableCell.xib */,
+				C86F0E1A2BCD8F2000F145DD /* ActiveDefaultTimerTableCellModel.swift */,
+			);
+			path = ActiveDefaultTimer;
+			sourceTree = "<group>";
+		};
+		C86F0E1F2BCD8F2000F145DD /* RecentDefaultTimer */ = {
+			isa = PBXGroup;
+			children = (
+				C86F0E1C2BCD8F2000F145DD /* RecentDefaultTimerTableCell.swift */,
+				C86F0E1D2BCD8F2000F145DD /* RecentDefaultTimerTableCell.xib */,
+				C86F0E1E2BCD8F2000F145DD /* RecentDefaultTimerTableCellModel.swift */,
+			);
+			path = RecentDefaultTimer;
+			sourceTree = "<group>";
+		};
+		C86F0E202BCD8F2000F145DD /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C86F0E1B2BCD8F2000F145DD /* ActiveDefaultTimer */,
+				C86F0E1F2BCD8F2000F145DD /* RecentDefaultTimer */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		C86F0E272BCD8F2000F145DD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C86F0E212BCD8F2000F145DD /* IntExtension.swift */,
+				C86F0E222BCD8F2000F145DD /* NSObjectExtension.swift */,
+				C86F0E232BCD8F2000F145DD /* UILabelExtension.swift */,
+				C86F0E242BCD8F2000F145DD /* UIPageViewControllerExtension.swift */,
+				C86F0E252BCD8F2000F145DD /* UITableViewExtension.swift */,
+				C86F0E262BCD8F2000F145DD /* UIViewExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C86F0E292BCD8F2000F145DD /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				C86F0E282BCD8F2000F145DD /* AppLabel.swift */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		C86F0E2C2BCD8F2000F145DD /* AnimateFlightIcon */ = {
+			isa = PBXGroup;
+			children = (
+				C86F0E2A2BCD8F2000F145DD /* AnimateFlightIconView.swift */,
+				C86F0E2B2BCD8F2000F145DD /* AnimateFlightIconView.xib */,
+			);
+			path = AnimateFlightIcon;
+			sourceTree = "<group>";
+		};
+		C86F0E2F2BCD8F2000F145DD /* InputFieldWithIcon */ = {
+			isa = PBXGroup;
+			children = (
+				C86F0E2D2BCD8F2000F145DD /* InputFieldWithIconView.swift */,
+				C86F0E2E2BCD8F2000F145DD /* InputFieldWithIconView.xib */,
+			);
+			path = InputFieldWithIcon;
+			sourceTree = "<group>";
+		};
+		C86F0E322BCD8F2000F145DD /* TapFieldWithIcon */ = {
+			isa = PBXGroup;
+			children = (
+				C86F0E302BCD8F2000F145DD /* TapFieldWithIconView.swift */,
+				C86F0E312BCD8F2000F145DD /* TapFieldWithIconView.xib */,
+			);
+			path = TapFieldWithIcon;
+			sourceTree = "<group>";
+		};
+		C86F0E332BCD8F2000F145DD /* InputFields */ = {
+			isa = PBXGroup;
+			children = (
+				C86F0E2F2BCD8F2000F145DD /* InputFieldWithIcon */,
+				C86F0E322BCD8F2000F145DD /* TapFieldWithIcon */,
+			);
+			path = InputFields;
+			sourceTree = "<group>";
+		};
+		C86F0E362BCD8F2000F145DD /* PageView */ = {
+			isa = PBXGroup;
+			children = (
+				C86F0E342BCD8F2000F145DD /* PageView.swift */,
+				C86F0E352BCD8F2000F145DD /* PageView.xib */,
+			);
+			path = PageView;
+			sourceTree = "<group>";
+		};
+		C86F0E392BCD8F2000F145DD /* TimePicker */ = {
+			isa = PBXGroup;
+			children = (
+				C86F0E372BCD8F2000F145DD /* TimePickerView.swift */,
+				C86F0E382BCD8F2000F145DD /* TimePickerView.xib */,
+			);
+			path = TimePicker;
+			sourceTree = "<group>";
+		};
+		C86F0E3C2BCD8F2000F145DD /* ValueDescriptionPicker */ = {
+			isa = PBXGroup;
+			children = (
+				C86F0E3A2BCD8F2000F145DD /* ValueDescriptionPickerView.swift */,
+				C86F0E3B2BCD8F2000F145DD /* ValueDescriptionPickerView.xib */,
+			);
+			path = ValueDescriptionPicker;
+			sourceTree = "<group>";
+		};
+		C86F0E3D2BCD8F2000F145DD /* Pickers */ = {
+			isa = PBXGroup;
+			children = (
+				C86F0E392BCD8F2000F145DD /* TimePicker */,
+				C86F0E3C2BCD8F2000F145DD /* ValueDescriptionPicker */,
+			);
+			path = Pickers;
+			sourceTree = "<group>";
+		};
+		C86F0E402BCD8F2000F145DD /* TimerCountAction */ = {
+			isa = PBXGroup;
+			children = (
+				C86F0E3E2BCD8F2000F145DD /* TimerCountActionView.swift */,
+				C86F0E3F2BCD8F2000F145DD /* TimerCountActionView.xib */,
+			);
+			path = TimerCountAction;
+			sourceTree = "<group>";
+		};
+		C86F0E412BCD8F2000F145DD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C86F0E2C2BCD8F2000F145DD /* AnimateFlightIcon */,
+				C86F0E332BCD8F2000F145DD /* InputFields */,
+				C86F0E362BCD8F2000F145DD /* PageView */,
+				C86F0E3D2BCD8F2000F145DD /* Pickers */,
+				C86F0E402BCD8F2000F145DD /* TimerCountAction */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C86F0E452BCD8F2000F145DD /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				C86F0E202BCD8F2000F145DD /* Cells */,
+				C86F0E272BCD8F2000F145DD /* Extensions */,
+				C86F0E292BCD8F2000F145DD /* Style */,
+				C86F0E412BCD8F2000F145DD /* Views */,
+				C86F0E422BCD8F2000F145DD /* RecentDefaultTimer.swift */,
+				C86F0E432BCD8F2000F145DD /* TimeBase.swift */,
+				C86F0E442BCD8F2000F145DD /* TimeConstant.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		C86F0E6C2BCD8F2E00F145DD /* Barlow */ = {
+			isa = PBXGroup;
+			children = (
+				C86F0E642BCD8F2E00F145DD /* AppFont.swift */,
+				C86F0E652BCD8F2E00F145DD /* Barlow-Black.ttf */,
+				C86F0E662BCD8F2E00F145DD /* Barlow-Bold.ttf */,
+				C86F0E672BCD8F2E00F145DD /* Barlow-ExtraBold.ttf */,
+				C86F0E682BCD8F2E00F145DD /* Barlow-Light.ttf */,
+				C86F0E692BCD8F2E00F145DD /* Barlow-Medium.ttf */,
+				C86F0E6A2BCD8F2E00F145DD /* Barlow-Regular.ttf */,
+				C86F0E6B2BCD8F2E00F145DD /* Barlow-SemiBold.ttf */,
+			);
+			path = Barlow;
+			sourceTree = "<group>";
+		};
+		C86F0E6E2BCD8F2E00F145DD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C86F0E6C2BCD8F2E00F145DD /* Barlow */,
+				C86F0E6D2BCD8F2E00F145DD /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C86F0E842BCD8F3D00F145DD /* DefaultActiveTimers */ = {
+			isa = PBXGroup;
+			children = (
+				C86F0E7E2BCD8F3D00F145DD /* DefaultActiveTimersAssembly.swift */,
+				C86F0E7F2BCD8F3D00F145DD /* DefaultActiveTimersCoordinator.swift */,
+				C86F0E802BCD8F3D00F145DD /* DefaultActiveTimersInteractor.swift */,
+				C86F0E812BCD8F3D00F145DD /* DefaultActiveTimersPresenter.swift */,
+				C86F0E822BCD8F3D00F145DD /* DefaultActiveTimersView.swift */,
+				C86F0E832BCD8F3D00F145DD /* DefaultActiveTimersView.xib */,
+			);
+			path = DefaultActiveTimers;
+			sourceTree = "<group>";
+		};
+		C86F0E8B2BCD8F3D00F145DD /* DefaultCreateTimer */ = {
+			isa = PBXGroup;
+			children = (
+				C86F0E852BCD8F3D00F145DD /* DefaultCreateTimerAssembly.swift */,
+				C86F0E862BCD8F3D00F145DD /* DefaultCreateTimerCoordinator.swift */,
+				C86F0E872BCD8F3D00F145DD /* DefaultCreateTimerInteractor.swift */,
+				C86F0E882BCD8F3D00F145DD /* DefaultCreateTimerPresenter.swift */,
+				C86F0E892BCD8F3D00F145DD /* DefaultCreateTimerView.swift */,
+				C86F0E8A2BCD8F3D00F145DD /* DefaultCreateTimerView.xib */,
+			);
+			path = DefaultCreateTimer;
+			sourceTree = "<group>";
+		};
+		C86F0E912BCD8F3D00F145DD /* DefaultTimer */ = {
+			isa = PBXGroup;
+			children = (
+				C86F0E8C2BCD8F3D00F145DD /* DefaultTimerAssembly.swift */,
+				C86F0E8D2BCD8F3D00F145DD /* DefaultTimerCoordinator.swift */,
+				C86F0E8E2BCD8F3D00F145DD /* DefaultTimerView.swift */,
+				C86F0E8F2BCD8F3D00F145DD /* DefaultTimerView.xib */,
+				C86F0E902BCD8F3D00F145DD /* DefaultTimerViewProtocols.swift */,
+			);
+			path = DefaultTimer;
+			sourceTree = "<group>";
+		};
+		C86F0E922BCD8F3D00F145DD /* DefaultTimerTab */ = {
+			isa = PBXGroup;
+			children = (
+				C86F0E842BCD8F3D00F145DD /* DefaultActiveTimers */,
+				C86F0E8B2BCD8F3D00F145DD /* DefaultCreateTimer */,
+				C86F0E912BCD8F3D00F145DD /* DefaultTimer */,
+			);
+			path = DefaultTimerTab;
+			sourceTree = "<group>";
+		};
+		C86F0E972BCD8F3D00F145DD /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				C86F0E942BCD8F3D00F145DD /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		C86F0E9E2BCD8F3D00F145DD /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				C86F0E982BCD8F3D00F145DD /* SettingsAssembly.swift */,
+				C86F0E992BCD8F3D00F145DD /* SettingsCoordinator.swift */,
+				C86F0E9A2BCD8F3D00F145DD /* SettingsInteractor.swift */,
+				C86F0E9B2BCD8F3D00F145DD /* SettingsPresenter.swift */,
+				C86F0E9C2BCD8F3D00F145DD /* SettingsView.swift */,
+				C86F0E9D2BCD8F3D00F145DD /* SettingsView.xib */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		C86F0EA52BCD8F3D00F145DD /* Stopwatch */ = {
+			isa = PBXGroup;
+			children = (
+				C86F0E9F2BCD8F3D00F145DD /* StopwatchAssembly.swift */,
+				C86F0EA02BCD8F3D00F145DD /* StopwatchCoordinator.swift */,
+				C86F0EA12BCD8F3D00F145DD /* StopwatchInteractor.swift */,
+				C86F0EA22BCD8F3D00F145DD /* StopwatchPresenter.swift */,
+				C86F0EA32BCD8F3D00F145DD /* StopwatchView.swift */,
+				C86F0EA42BCD8F3D00F145DD /* StopwatchView.xib */,
+			);
+			path = Stopwatch;
+			sourceTree = "<group>";
+		};
+		C86F0EA62BCD8F3D00F145DD /* ScreenAssembly */ = {
+			isa = PBXGroup;
+			children = (
+				C86F0E922BCD8F3D00F145DD /* DefaultTimerTab */,
+				C86F0E972BCD8F3D00F145DD /* Launch */,
+				C86F0E9E2BCD8F3D00F145DD /* Settings */,
+				C86F0EA52BCD8F3D00F145DD /* Stopwatch */,
+			);
+			path = ScreenAssembly;
+			sourceTree = "<group>";
+		};
+		C86F0ECD2BCD8F4400F145DD /* WindowRoot */ = {
+			isa = PBXGroup;
+			children = (
+				C86F0ECB2BCD8F4400F145DD /* TabBarWindowRoot.swift */,
+				C86F0ECC2BCD8F4400F145DD /* WindowRootEntity.swift */,
+			);
+			path = WindowRoot;
+			sourceTree = "<group>";
+		};
+		C86F0ECE2BCD8F4400F145DD /* Etities */ = {
+			isa = PBXGroup;
+			children = (
+				C86F0ECD2BCD8F4400F145DD /* WindowRoot */,
+			);
+			path = Etities;
+			sourceTree = "<group>";
+		};
+		C86F0ED32BCD8F4400F145DD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C86F0ECE2BCD8F4400F145DD /* Etities */,
+				C86F0ED02BCD8F4400F145DD /* RealmRootService.swift */,
+				C86F0ED12BCD8F4400F145DD /* ServiceAssambly.swift */,
+				C86F0ED22BCD8F4400F145DD /* WindowRootService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +643,9 @@
 			dependencies = (
 			);
 			name = TimerVIP;
+			packageProductDependencies = (
+				C85DC2B72BCD926100E10FED /* Swinject */,
+			);
 			productName = TimerVIP;
 			productReference = C86F0DC92BCD838900F145DD /* TimerVIP.app */;
 			productType = "com.apple.product-type.application";
@@ -213,8 +716,12 @@
 			knownRegions = (
 				en,
 				Base,
+				uk,
 			);
 			mainGroup = C86F0DC02BCD838800F145DD;
+			packageReferences = (
+				C86F0EDA2BCD8F7E00F145DD /* XCRemoteSwiftPackageReference "Swinject" */,
+			);
 			productRefGroup = C86F0DCA2BCD838900F145DD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,9 +738,30 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C86F0DD62BCD838A00F145DD /* Assets.xcassets in Resources */,
-				C86F0DD92BCD838A00F145DD /* Base in Resources */,
-				C86F0DD42BCD838900F145DD /* Base in Resources */,
+				C86F0EBB2BCD8F3D00F145DD /* DefaultTimerView.xib in Resources */,
+				C86F0E472BCD8F2000F145DD /* ActiveDefaultTimerTableCell.xib in Resources */,
+				C86F0E742BCD8F2E00F145DD /* Barlow-Medium.ttf in Resources */,
+				C86F0E4A2BCD8F2000F145DD /* RecentDefaultTimerTableCell.xib in Resources */,
+				C86F0E732BCD8F2E00F145DD /* Barlow-Light.ttf in Resources */,
+				C86F0E752BCD8F2E00F145DD /* Barlow-Regular.ttf in Resources */,
+				C86F0E5A2BCD8F2000F145DD /* PageView.xib in Resources */,
+				C86F0E5C2BCD8F2000F145DD /* TimePickerView.xib in Resources */,
+				C86F0EE62BCD905A00F145DD /* Localizable.strings in Resources */,
+				C86F0EBD2BCD8F3D00F145DD /* LaunchScreen.storyboard in Resources */,
+				C86F0E722BCD8F2E00F145DD /* Barlow-ExtraBold.ttf in Resources */,
+				C86F0E582BCD8F2000F145DD /* TapFieldWithIconView.xib in Resources */,
+				C86F0ECA2BCD8F3D00F145DD /* StopwatchView.xib in Resources */,
+				C86F0E602BCD8F2000F145DD /* TimerCountActionView.xib in Resources */,
+				C86F0EB12BCD8F3D00F145DD /* DefaultActiveTimersView.xib in Resources */,
+				C86F0EC42BCD8F3D00F145DD /* SettingsView.xib in Resources */,
+				C86F0E542BCD8F2000F145DD /* AnimateFlightIconView.xib in Resources */,
+				C86F0E712BCD8F2E00F145DD /* Barlow-Bold.ttf in Resources */,
+				C86F0E5E2BCD8F2000F145DD /* ValueDescriptionPickerView.xib in Resources */,
+				C86F0E762BCD8F2E00F145DD /* Barlow-SemiBold.ttf in Resources */,
+				C86F0EB72BCD8F3D00F145DD /* DefaultCreateTimerView.xib in Resources */,
+				C86F0E702BCD8F2E00F145DD /* Barlow-Black.ttf in Resources */,
+				C86F0E772BCD8F2E00F145DD /* Assets.xcassets in Resources */,
+				C86F0E562BCD8F2000F145DD /* InputFieldWithIconView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +786,68 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C86F0DD12BCD838900F145DD /* ViewController.swift in Sources */,
-				C86F0DCD2BCD838900F145DD /* AppDelegate.swift in Sources */,
-				C86F0DCF2BCD838900F145DD /* SceneDelegate.swift in Sources */,
+				C85DC2BA2BCD928E00E10FED /* Localization.swift in Sources */,
+				C86F0E142BCD8F0900F145DD /* Coordinator.swift in Sources */,
+				C86F0E4D2BCD8F2000F145DD /* NSObjectExtension.swift in Sources */,
+				C86F0ED92BCD8F4400F145DD /* WindowRootService.swift in Sources */,
+				C86F0EBF2BCD8F3D00F145DD /* SettingsAssembly.swift in Sources */,
+				C86F0ED82BCD8F4400F145DD /* ServiceAssambly.swift in Sources */,
+				C86F0ED72BCD8F4400F145DD /* RealmRootService.swift in Sources */,
+				C86F0EC72BCD8F3D00F145DD /* StopwatchInteractor.swift in Sources */,
+				C86F0E092BCD8F0100F145DD /* SceneDelegate.swift in Sources */,
+				C86F0ED42BCD8F4400F145DD /* TabBarWindowRoot.swift in Sources */,
+				C86F0E172BCD8F0900F145DD /* TabBarController.swift in Sources */,
+				C86F0EB62BCD8F3D00F145DD /* DefaultCreateTimerView.swift in Sources */,
+				C86F0E5F2BCD8F2000F145DD /* TimerCountActionView.swift in Sources */,
+				C86F0E572BCD8F2000F145DD /* TapFieldWithIconView.swift in Sources */,
+				C86F0E632BCD8F2000F145DD /* TimeConstant.swift in Sources */,
+				C86F0EB92BCD8F3D00F145DD /* DefaultTimerCoordinator.swift in Sources */,
+				C86F0E072BCD8F0100F145DD /* AppDelegate.swift in Sources */,
+				C86F0EC02BCD8F3D00F145DD /* SettingsCoordinator.swift in Sources */,
+				C86F0E5D2BCD8F2000F145DD /* ValueDescriptionPickerView.swift in Sources */,
+				C86F0EAD2BCD8F3D00F145DD /* DefaultActiveTimersCoordinator.swift in Sources */,
+				C86F0EB82BCD8F3D00F145DD /* DefaultTimerAssembly.swift in Sources */,
+				C86F0EBC2BCD8F3D00F145DD /* DefaultTimerViewProtocols.swift in Sources */,
+				C86F0E532BCD8F2000F145DD /* AnimateFlightIconView.swift in Sources */,
+				C86F0E132BCD8F0900F145DD /* ClosureType.swift in Sources */,
+				C86F0E4C2BCD8F2000F145DD /* IntExtension.swift in Sources */,
+				C86F0ED52BCD8F4400F145DD /* WindowRootEntity.swift in Sources */,
+				C86F0E4B2BCD8F2000F145DD /* RecentDefaultTimerTableCellModel.swift in Sources */,
+				C86F0E5B2BCD8F2000F145DD /* TimePickerView.swift in Sources */,
+				C86F0E152BCD8F0900F145DD /* NavigationController.swift in Sources */,
+				C86F0EC92BCD8F3D00F145DD /* StopwatchView.swift in Sources */,
+				C86F0EC52BCD8F3D00F145DD /* StopwatchAssembly.swift in Sources */,
+				C86F0EB42BCD8F3D00F145DD /* DefaultCreateTimerInteractor.swift in Sources */,
+				C86F0E612BCD8F2000F145DD /* RecentDefaultTimer.swift in Sources */,
+				C86F0E552BCD8F2000F145DD /* InputFieldWithIconView.swift in Sources */,
+				C86F0EC22BCD8F3D00F145DD /* SettingsPresenter.swift in Sources */,
+				C86F0EB02BCD8F3D00F145DD /* DefaultActiveTimersView.swift in Sources */,
+				C86F0EAE2BCD8F3D00F145DD /* DefaultActiveTimersInteractor.swift in Sources */,
+				C86F0EB32BCD8F3D00F145DD /* DefaultCreateTimerCoordinator.swift in Sources */,
+				C86F0E052BCD8F0100F145DD /* AppConfigServices.swift in Sources */,
+				C86F0E502BCD8F2000F145DD /* UITableViewExtension.swift in Sources */,
+				C86F0E4F2BCD8F2000F145DD /* UIPageViewControllerExtension.swift in Sources */,
+				C86F0E122BCD8F0900F145DD /* BaseView.swift in Sources */,
+				C86F0E592BCD8F2000F145DD /* PageView.swift in Sources */,
+				C86F0EC82BCD8F3D00F145DD /* StopwatchPresenter.swift in Sources */,
+				C86F0E062BCD8F0100F145DD /* AppContainer.swift in Sources */,
+				C86F0EAC2BCD8F3D00F145DD /* DefaultActiveTimersAssembly.swift in Sources */,
+				C86F0E462BCD8F2000F145DD /* ActiveDefaultTimerTableCell.swift in Sources */,
+				C86F0EB52BCD8F3D00F145DD /* DefaultCreateTimerPresenter.swift in Sources */,
+				C86F0EBA2BCD8F3D00F145DD /* DefaultTimerView.swift in Sources */,
+				C86F0E482BCD8F2000F145DD /* ActiveDefaultTimerTableCellModel.swift in Sources */,
+				C86F0E6F2BCD8F2E00F145DD /* AppFont.swift in Sources */,
+				C86F0EAF2BCD8F3D00F145DD /* DefaultActiveTimersPresenter.swift in Sources */,
+				C86F0EB22BCD8F3D00F145DD /* DefaultCreateTimerAssembly.swift in Sources */,
+				C86F0E082BCD8F0100F145DD /* Assemblies.swift in Sources */,
+				C86F0E512BCD8F2000F145DD /* UIViewExtension.swift in Sources */,
+				C86F0EC62BCD8F3D00F145DD /* StopwatchCoordinator.swift in Sources */,
+				C86F0EC32BCD8F3D00F145DD /* SettingsView.swift in Sources */,
+				C86F0E4E2BCD8F2000F145DD /* UILabelExtension.swift in Sources */,
+				C86F0E622BCD8F2000F145DD /* TimeBase.swift in Sources */,
+				C86F0E522BCD8F2000F145DD /* AppLabel.swift in Sources */,
+				C86F0E492BCD8F2000F145DD /* RecentDefaultTimerTableCell.swift in Sources */,
+				C86F0EC12BCD8F3D00F145DD /* SettingsInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,20 +884,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C86F0DD22BCD838900F145DD /* Main.storyboard */ = {
+		C86F0E942BCD8F3D00F145DD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C86F0DD32BCD838900F145DD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		C86F0DD72BCD838A00F145DD /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C86F0DD82BCD838A00F145DD /* Base */,
+				C86F0EE02BCD8FEF00F145DD /* Base */,
+				C86F0EE72BCD906900F145DD /* uk */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C86F0EE52BCD905A00F145DD /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C86F0EE42BCD905A00F145DD /* en */,
+				C86F0EE82BCD906900F145DD /* uk */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -321,6 +910,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -368,7 +958,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -384,6 +974,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -425,7 +1016,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -447,9 +1038,8 @@
 				INFOPLIST_FILE = TimerVIP/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -475,9 +1065,8 @@
 				INFOPLIST_FILE = TimerVIP/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -607,6 +1196,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C86F0EDA2BCD8F7E00F145DD /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C85DC2B72BCD926100E10FED /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C86F0EDA2BCD8F7E00F145DD /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C86F0DC12BCD838800F145DD /* Project object */;
 }

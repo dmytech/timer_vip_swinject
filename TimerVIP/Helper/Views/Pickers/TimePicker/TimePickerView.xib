@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TimePickerView" customModule="CustomizeTimer" customModuleProvider="target">
+            <connections>
+                <outlet property="hoursPicker" destination="y6t-5T-Bfa" id="y60-ZK-IxT"/>
+                <outlet property="minutesPicker" destination="W7k-uu-MUk" id="3jb-5S-6N4"/>
+                <outlet property="secondsPicker" destination="Ct7-S0-x9z" id="qjY-xj-sVn"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="367" height="327"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="ooY-8X-szN">
+                    <rect key="frame" x="13.666666666666657" y="0.0" width="340" height="327"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y6t-5T-Bfa" customClass="ValueDescriptionPickerView" customModule="CustomizeTimer" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="90" height="327"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W7k-uu-MUk" customClass="ValueDescriptionPickerView" customModule="CustomizeTimer" customModuleProvider="target">
+                            <rect key="frame" x="125" y="0.0" width="90" height="327"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ct7-S0-x9z" customClass="ValueDescriptionPickerView" customModule="CustomizeTimer" customModuleProvider="target">
+                            <rect key="frame" x="250" y="0.0" width="90" height="327"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eJU-bG-J6d">
+                    <rect key="frame" x="0.0" y="146" width="367" height="35"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="yJ2-mL-z8c"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" name="uiSecondaryWhite"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="W7k-uu-MUk" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="BG6-RU-II5"/>
+                <constraint firstAttribute="trailing" secondItem="eJU-bG-J6d" secondAttribute="trailing" id="WPZ-Vl-rd9"/>
+                <constraint firstItem="eJU-bG-J6d" firstAttribute="centerY" secondItem="ooY-8X-szN" secondAttribute="centerY" id="b6G-xf-11B"/>
+                <constraint firstAttribute="bottom" secondItem="ooY-8X-szN" secondAttribute="bottom" id="cLz-17-BYK"/>
+                <constraint firstItem="ooY-8X-szN" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="qjw-KT-nxu"/>
+                <constraint firstItem="eJU-bG-J6d" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="uJM-el-cvA"/>
+                <constraint firstItem="ooY-8X-szN" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="uTB-Re-Z9c"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-499.27536231884062" y="180.57065217391306"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="uiSecondaryWhite">
+            <color red="0.87058823529411766" green="0.8666666666666667" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

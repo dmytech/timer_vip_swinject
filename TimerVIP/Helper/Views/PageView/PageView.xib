@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PageView" customModule="CustomizeTimer" customModuleProvider="target">
+            <connections>
+                <outlet property="pageControl" destination="Xx1-ki-7AP" id="O70-bq-43Y"/>
+                <outlet property="pagingScrollView" destination="daO-Q7-lLX" id="1dL-U7-2iJ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="daO-Q7-lLX">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </scrollView>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Xx1-ki-7AP">
+                    <rect key="frame" x="138.66666666666666" y="796" width="116" height="26"/>
+                </pageControl>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="daO-Q7-lLX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="D06-S0-v8g"/>
+                <constraint firstItem="daO-Q7-lLX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="E9l-ea-DoN"/>
+                <constraint firstItem="Xx1-ki-7AP" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="QLY-PY-keC"/>
+                <constraint firstAttribute="trailing" secondItem="daO-Q7-lLX" secondAttribute="trailing" id="geD-ul-dKO"/>
+                <constraint firstAttribute="bottom" secondItem="daO-Q7-lLX" secondAttribute="bottom" id="sCc-sY-gu0"/>
+                <constraint firstAttribute="bottom" secondItem="Xx1-ki-7AP" secondAttribute="bottom" constant="30" id="tvk-Il-scm"/>
+            </constraints>
+            <point key="canvasLocation" x="-499.27536231884062" y="181.13839285714286"/>
+        </view>
+    </objects>
+</document>

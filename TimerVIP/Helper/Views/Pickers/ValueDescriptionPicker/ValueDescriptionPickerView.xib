@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Barlow-Regular.ttf">
+            <string>Barlow-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ValueDescriptionPickerView" customModule="CustomizeTimer" customModuleProvider="target">
+            <connections>
+                <outlet property="descriptionLbl" destination="s5e-ao-P5y" id="dZ2-5s-WZJ"/>
+                <outlet property="lblPickerView" destination="1B6-gv-gXM" id="tGY-0P-OVN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="118" height="327"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="u3T-eB-n9l">
+                    <rect key="frame" x="0.0" y="0.0" width="118" height="327"/>
+                    <subviews>
+                        <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1B6-gv-gXM">
+                            <rect key="frame" x="0.0" y="0.0" width="40" height="327"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="WMQ-xO-doH"/>
+                            </constraints>
+                        </pickerView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s5e-ao-P5y" customClass="BarlowBold16" customModule="CustomizeTimer" customModuleProvider="target">
+                            <rect key="frame" x="45" y="0.0" width="73" height="327"/>
+                            <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="16"/>
+                            <color key="textColor" name="uiTextWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="u3T-eB-n9l" secondAttribute="bottom" id="Nhc-0w-opv"/>
+                <constraint firstItem="u3T-eB-n9l" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="afR-JR-WgJ"/>
+                <constraint firstItem="u3T-eB-n9l" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="zNd-tZ-MO8"/>
+                <constraint firstAttribute="trailing" secondItem="u3T-eB-n9l" secondAttribute="trailing" id="zbW-KA-fKT"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-679.71014492753625" y="180.57065217391306"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="s5e-ao-P5y">
+            <size key="intrinsicContentSize" width="39.333333333333336" height="19"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="uiTextWhite">
+            <color red="0.96470588235294119" green="0.96470588235294119" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -90,3 +90,5 @@ fastlane/test_output
 iOSInjectionProject/
 /contents.xcworkspacedata
 /xcshareddata
+/TimerVIP.xcodeproj/project.xcworkspace/xcshareddata
+TimerVIP.xcodeproj/project.xcworkspace/contents.xcworkspacedata
